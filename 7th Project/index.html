@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .container{
+      display: grid;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+      grid-template-rows: 414px 9px 130px 10px 155px 9px 20px;
+      height: 748px;
+      width: 748px;
+      background-color: #F0F1EC; 
+    }
+    .box1{
+      background-color: #E72F24;
+      height: 414px;
+      width: 320px;
+      margin: 0px;
+      margin-top: 0px;
+    }
+
+    .box2{
+      background-color: #004592;
+      height: 130px;
+      width: 50px;
+      margin: 0px;
+      margin-top: 0px;
+      grid-column: 7;
+      grid-row: 3;
+    }
+
+    .box3{
+      background-color: #F9D01E ;
+      height: 20px;
+      width: 198px;
+      grid-area: 7/3;
+    }
+
+    .box4{
+      background-color: grey;
+      height:20px;
+      width: 153px;
+      grid-area: 7/5;
+    }
+
+
+
+
+
+    .line1{
+      background-color: black;
+      height: 748px;
+      width: 9px;
+      grid-area: 1/2;
+    }
+
+    .line2{
+      background-color: black;
+      height: 9px;
+      width: 749px;
+      grid-area: 2/1;
+    }
+
+    .line3{
+      background-color: black;
+      height: 10px;
+      width: 50px;
+      grid-area: 4/7;
+    }
+
+    .line4{
+      background-color: black;
+      height: 9px;
+      width: 689px;
+      grid-area: 6/1;
+    }
+
+    .line5{
+      background-color: black;
+      height: 333px;
+      width: 9px;
+      grid-area: 2/6;
+    }
+
+    .line6{
+      background-color: black;
+      height: 29px;
+      width: 9px;
+      grid-area: 6/4;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+<div class = "container">
+  <div class = "box1"></div>
+  <div class = "box2"></div>
+  <div class = "box3"></div>
+  <div class = "box4"></div>
+  <div class = "box5"></div>
+  <div class = "box6"></div>
+  <div class = "box7"></div>
+  <div class = "box8"></div>
+
+  <div class = "line1"></div>
+  <div class = "line2"></div>
+  <div class = "line3"></div>
+  <div class = "line4"></div>
+  <div class = "line5"></div>
+  <div class = "line6"></div>
+</div>
+</body>
+
+</html>
